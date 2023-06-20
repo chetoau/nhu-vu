@@ -1,4 +1,6 @@
-
+body {
+    background-color: black;
+}
 
 @font-face {
     font-family: 'JetBrains Mono Regular';
@@ -13,4 +15,14 @@
 @font-face {
     font-family: 'JetBrains Mono Italic';
     src: url('./fonts/JetBrainsMono-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'VT 323';
+    src: url('./fonts/VT323-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('./fonts/PressStart2P-Regular.ttf');
 }

@@ -1,0 +1,45 @@
+
+.siteTitle {
+    font-family: 'VT 323';
+    color: white;
+    font-size: 50px;
+}
+
+body {
+    color: white;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+}
+
+.textButton {
+    font-family: 'JetBrains Mono Regular';
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.textButton:hover {
+    cursor: pointer;
+}
+
