@@ -1,31 +1,32 @@
-import React from 'react'
-import styles from '../styles/Header.module.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import styles from '../styles/Header.module.css';
 
 export default function Header() {
+
+  const activeLink = ({ isActive }) => isActive ? `${styles.activeLink}` : '';
+  const [active, setActive] = useState(false);
+
+  function inactivate() {
+    setActive(!active);
+  }
+
+
   return (
-    <div className={styles.navBar}>
+    <header className={styles.header} id="header">
       <div className={styles.left}>
-        <div className={styles.siteTitle}>
-          nhu's portfolio
-        </div>
-        <div className={styles.logo}>
-          logo
-        </div>
+      <div className={styles.title}><NavLink to="/">nhu's portfolio</NavLink></div>
+      <div className={styles.logo}>logo</div>
       </div>
       <div className={styles.right}>
-        <button className={styles.textButton}>
-          Home
-        </button>
-        <button className={styles.textButton}>
-          Experience
-        </button>
-        <button className={styles.textButton}>
-          Projects
-        </button>
-        <button className={styles.textButton}>
-          Contact Me
-        </button>
+        <div className={active ? `${styles.activeLinks}` : `${styles.links}`}>
+          <NavLink to="/projects" className={activeLink}>Projects</NavLink>
+          <NavLink to="/experience" className={activeLink}>Experience</NavLink>
+          <NavLink to="contacts" className={activeLink}>Contact Me</NavLink>
+        </div>
       </div>
-    </div>
+      
+    </header>
   )
 }
