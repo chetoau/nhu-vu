@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contacts from './components/Contacts'
-import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function App() {
 

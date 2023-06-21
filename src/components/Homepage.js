@@ -3,6 +3,7 @@ import styles from '../styles/Homepage.module.css';
 import cat from '../images/catcomp.gif'
 import Typewriter from 'typewriter-effect';
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Homepage() {
 
