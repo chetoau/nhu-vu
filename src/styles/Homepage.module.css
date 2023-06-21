@@ -2,21 +2,6 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-body {
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
- 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-
 .bigContainer {
     display: flex;
     flex-direction: row;
@@ -122,8 +107,26 @@ body {
     display: flex;
     position: relative;
     bottom: 350px;
-    right: -700px;
-    width: 550px;
+    right: -650px;
+    width: 600px;
     height: 75px;
 }
 
+.selectBar {
+    display: flex;
+    position: relative;
+    bottom: 300px;
+    flex-direction: row;
+    gap: 82px;
+    right: -650px;
+}
+
+.selection {
+    font-family: 'Press Start 2P';
+    color: white;
+    text-decoration: none;
+}
+
+.selection:hover {
+    color:rgba(252, 155, 255, 1);
+}
