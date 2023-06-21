@@ -1,22 +1,12 @@
 
-.siteTitle {
-    font-family: 'VT 323';
-    color: white;
-    font-size: 50px;
-}
-
-body {
-    color: white;
-    margin-top: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
-.navBar {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: 155px;
+    margin-right: 155px;
+    margin-top: 25px;
 }
 
 .left {
@@ -24,22 +14,40 @@ body {
     flex-direction: row;
 }
 
-.right {
+.title a {
+    color: white;
+    text-decoration: none;
+    font-family: 'VT 323';
+    font-size: 50px;
+}
+
+.title a:hover {
+    cursor: pointer;
+}
+
+.logo {
+    color: white;
+}
+
+.links {
     display: flex;
     flex-direction: row;
     gap: 65px;
 }
 
-.textButton {
+.links a {
+    color: white;
+    text-decoration: none;
     font-family: 'JetBrains Mono Regular';
     font-size: 22px;
-    color: white;
-    background-color: transparent;
-    border: none;
-    
 }
 
-.textButton:hover {
-    cursor: pointer;
+.links a:hover, .activeLink a {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    font-family: 'JetBrains Mono Regular';
+    font-size: 22px;
+    color: #FC9BFF;
 }
 
