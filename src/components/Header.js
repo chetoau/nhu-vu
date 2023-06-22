@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import logo from '../images/logo.png';
 
