@@ -4,6 +4,8 @@ Welcome to my personal website. It was created with the purpose of showcasing my
 
 Project wireframes were created using Figma. 
 
+Link to wireframes: https://www.figma.com/file/mAWn6zwtk8GTeEJiXPn9TS/Personal-Website-Wireframe?type=design&node-id=0%3A1&mode=design&t=1ajq7piT3grgupTi-1
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
