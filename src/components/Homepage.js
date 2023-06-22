@@ -4,8 +4,27 @@ import cat from '../images/catcomp.gif'
 import Typewriter from 'typewriter-effect';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import arrow from '../images/arrow.png';
 
 export default function Homepage() {
+
+const [isHoveredP, setIsHoveredP] = useState(false);
+const [isHoveredE, setIsHoveredE] = useState(false);
+const [isHoveredC, setIsHoveredC] = useState(false);
+
+
+
+function forP() {
+  setIsHoveredP(true)
+}
+
+function forE() {
+  setIsHoveredE(true)
+}
+
+function forC() {
+  setIsHoveredC(true)
+}
 
   return (
     <div className={styles.bigContainer}>
@@ -40,9 +59,33 @@ export default function Homepage() {
             </div>
           </div>
           <div className={styles.selectBar}>
-            <NavLink to='/projects' className={styles.selection}>Projects</NavLink>
-            <NavLink to='/experience' className={styles.selection}>Experience</NavLink>
-            <NavLink to='/contacts' className={styles.selection}>Contacts</NavLink>
+            <div className={styles.pContainer}>
+            <NavLink to='/projects' className={styles.selection}
+            onMouseEnter={() => forP()}
+            onMouseLeave={() => setIsHoveredP(false)} 
+            >Projects</NavLink>
+            {isHoveredP && (
+              <img src={arrow} className={styles.pArrow}/>
+            )}
+            </div>
+            <div className={styles.eContainer}>
+            <NavLink to='/experience' className={styles.selection}
+            onMouseEnter={() => forE(true)}
+            onMouseLeave={() => setIsHoveredE(false)}
+            >Experience</NavLink>
+            {isHoveredE && (
+              <img src={arrow} className={styles.eArrow}/>
+            )}
+            </div>
+            <div className={styles.eContainer}>
+            <NavLink to='/contacts' className={styles.selection}
+            onMouseEnter={() => forC(true)}
+            onMouseLeave={() => setIsHoveredC(false)}
+            >Contacts</NavLink>
+            {isHoveredC && (
+              <img src={arrow} className={styles.cArrow}/>
+            )}
+            </div>
           </div>
         </div>
       </div>
