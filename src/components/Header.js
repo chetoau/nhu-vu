@@ -16,7 +16,7 @@ export default function Header() {
     <header className={styles.header} id="header">
       <div className={styles.left}>
       <div className={styles.title}><NavLink to="/">nhu's portfolio</NavLink></div>
-      <NavLink to="/" className={styles.logo}><img src={logo}/></NavLink>
+      <NavLink to="/" className={styles.logo}><img src={logo} alt="logo"/></NavLink>
       </div>
       <div className={styles.right}>
         <div className={active ? `${styles.activeLinks}` : `${styles.links}`}>

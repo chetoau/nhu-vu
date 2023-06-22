@@ -65,7 +65,7 @@ function forC() {
             onMouseLeave={() => setIsHoveredP(false)} 
             >Projects</NavLink>
             {isHoveredP && (
-              <img src={arrow} className={styles.pArrow}/>
+              <img src={arrow} alt="arrow" className={styles.pArrow}/>
             )}
             </div>
             <div className={styles.eContainer}>
@@ -74,7 +74,7 @@ function forC() {
             onMouseLeave={() => setIsHoveredE(false)}
             >Experience</NavLink>
             {isHoveredE && (
-              <img src={arrow} className={styles.eArrow}/>
+              <img src={arrow} alt="arrow" className={styles.eArrow}/>
             )}
             </div>
             <div className={styles.eContainer}>
@@ -83,7 +83,7 @@ function forC() {
             onMouseLeave={() => setIsHoveredC(false)}
             >Contacts</NavLink>
             {isHoveredC && (
-              <img src={arrow} className={styles.cArrow}/>
+              <img src={arrow} alt="arrow" className={styles.cArrow}/>
             )}
             </div>
           </div>
