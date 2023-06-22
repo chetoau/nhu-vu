@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contacts from './components/Contacts'
 import { useState, useEffect } from 'react';
-import loadingGif from './images/loading.gif'
 import Loading from './components/Loading'
 
 function App() {

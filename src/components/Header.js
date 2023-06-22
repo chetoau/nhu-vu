@@ -9,9 +9,7 @@ export default function Header() {
   const activeLink = ({ isActive }) => isActive ? `${styles.activeLink}` : '';
   const [active, setActive] = useState(false);
 
-  function inactivate() {
-    setActive(!active);
-  }
+
 
 
   return (
