@@ -50,7 +50,7 @@ body {
 
 .purpleCircle img {
     height: 80%;
-    mix-blend-mode: color;
+    mix-blend-mode: normal;
     position: absolute;
 }
 
@@ -128,5 +128,44 @@ body {
 }
 
 .selection:hover {
-    color:rgba(252, 155, 255, 1);
+    color:#FC9BFF;
+}
+
+.pArrow {
+    width: 20px;
+    height: 30px;
+}
+
+.pContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    height: 100px;
+    align-items: center;
+}
+
+.eArrow {
+    width: 20px;
+    height: 30px;
+}
+
+.eContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    height: 100px;
+    align-items: center;
+}
+
+.cArrow {
+    width: 20px;
+    height: 30px;
+}
+
+.cContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    height: 100px;
+    align-items: center;
 }
